@@ -1,6 +1,10 @@
-module MyLib
-    ( someFunc
-    ) where
+module MyLib(
+    myLibMessage
+  , myLibAdd
+) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+myLibMessage :: String
+myLibMessage = "This is a message from stack-library-on-github"
+
+myLibAdd :: Int -> Int -> Int
+myLibAdd a b = a + b
